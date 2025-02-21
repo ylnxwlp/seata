@@ -20,10 +20,12 @@ import org.apache.seata.common.util.StringUtils;
 import org.apache.seata.server.cluster.raft.sync.msg.dto.GlobalTransactionDTO;
 
 /**
+ * 全局的raft会话同步基本信息
  */
 public class RaftGlobalSessionSyncMsg extends RaftBaseMsg {
 
     private static final long serialVersionUID = -8577994371969898054L;
+
     private GlobalTransactionDTO globalSession;
 
     public RaftGlobalSessionSyncMsg(RaftSyncMsgType msgType, GlobalTransactionDTO globalSession) {

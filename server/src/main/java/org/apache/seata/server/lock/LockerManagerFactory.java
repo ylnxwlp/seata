@@ -59,6 +59,7 @@ public class LockerManagerFactory {
     public static void init(LockMode lockMode) {
         if (LOCK_MANAGER == null) {
             synchronized (LockerManagerFactory.class) {
+                //二次判断
                 if (LOCK_MANAGER == null) {
                     if (null == lockMode) {
                         lockMode = StoreConfig.getLockMode();

@@ -17,43 +17,44 @@
 package org.apache.seata.server.cluster.raft.sync.msg;
 
 /**
+ * 集群同步的消息类型
  */
 public enum RaftSyncMsgType {
 
     /**
-     * addGlobalSession
+     * 添加一个全局会话
      */
     ADD_GLOBAL_SESSION,
     /**
-     * removeGlobalSession
+     * 移除一个全局会话
      */
     REMOVE_GLOBAL_SESSION,
     /**
-     *
+     * 添加分支会话
      */
     ADD_BRANCH_SESSION,
     /**
-     * addBranchSession
+     * 移除分支会话
      */
     REMOVE_BRANCH_SESSION,
     /**
-     * updateGlobalSessionStatus
+     * 更新全局会话状态
      */
     UPDATE_GLOBAL_SESSION_STATUS,
     /**
-     * updateBranchSessionStatus
+     * 更新分支会话状态
      */
     UPDATE_BRANCH_SESSION_STATUS,
     /**
-     * releaseGlobalSessionLock
+     * 释放全局会话锁
      */
     RELEASE_GLOBAL_SESSION_LOCK,
     /**
-     * releaseBranchSessionLock
+     * 释放分支会话锁
      */
     RELEASE_BRANCH_SESSION_LOCK,
     /**
-     * refresh cluster metadata
+     * 刷新集群元数据
      */
     REFRESH_CLUSTER_METADATA;
 }

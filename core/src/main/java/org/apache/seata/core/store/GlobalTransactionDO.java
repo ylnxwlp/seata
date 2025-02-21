@@ -17,11 +17,11 @@
 package org.apache.seata.core.store;
 
 import java.util.Date;
+
 import org.apache.seata.common.util.StringUtils;
 
 /**
- * Global Transaction data object
- *
+ * 全局事务数据对象
  */
 public class GlobalTransactionDO implements java.io.Serializable {
 
@@ -53,7 +53,8 @@ public class GlobalTransactionDO implements java.io.Serializable {
         this.xid = xid;
     }
 
-    public GlobalTransactionDO() {}
+    public GlobalTransactionDO() {
+    }
 
     /**
      * Gets xid.
@@ -255,6 +256,7 @@ public class GlobalTransactionDO implements java.io.Serializable {
 
     /**
      * Sets transactionId
+     *
      * @param transactionId the transactionId
      */
     public void setTransactionId(Long transactionId) {
@@ -263,6 +265,7 @@ public class GlobalTransactionDO implements java.io.Serializable {
 
     /**
      * Sets status
+     *
      * @param status the status
      */
     public void setStatus(Integer status) {
@@ -271,6 +274,7 @@ public class GlobalTransactionDO implements java.io.Serializable {
 
     /**
      * Sets timeout
+     *
      * @param timeout the timeout
      */
     public void setTimeout(Integer timeout) {
@@ -279,6 +283,7 @@ public class GlobalTransactionDO implements java.io.Serializable {
 
     /**
      * Sets begin time
+     *
      * @param beginTime the begin time
      */
     public void setBeginTime(Long beginTime) {
